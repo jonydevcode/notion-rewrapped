@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Launches notion
+
+INSTALL_DIR="$HOME/.local/share/notion-rewrapped"
+
+if [ -x "electron" ]; then
+    # Run Notion from the PWD
+    echo "$FILE exists and is executable."
+else
+    # Run Notion from the installed location
+    cd $INSTALL_DIR || exit 1
+    # exec ./electron app.asar --force-device-scale-factor=1.5
+    exec ./electron app.asar "$@"
+fi
