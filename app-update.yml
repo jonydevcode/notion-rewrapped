@@ -1,0 +1,4 @@
+provider: generic
+url: 'https://desktop-release.notion-static.com'
+channel: latest
+updaterCacheDirName: notion-updater

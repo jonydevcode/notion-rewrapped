@@ -12,14 +12,14 @@ cat <<EOS > "$HOME/.local/share/applications/Notion.desktop"
 Name=Notion
 Name[en_US]=Notion
 Comment=Unofficial Notion application for Linux
-Exec=$HOME/.local/bin/notion-rewrapped --force-device-scale-factor=1.5
+Exec=$HOME/.local/bin/notion-rewrapped --force-device-scale-factor=1.25
 Terminal=false
 Categories=Office;TextEditor;Utility
 Type=Application
 Icon=${INSTALL_DIR}/Notion_app_logo.png
 StartupWMClass=notion
 EOS
-chmod +x Notion.desktop
+chmod +x "$HOME/.local/share/applications/Notion.desktop"
 
 
 # install

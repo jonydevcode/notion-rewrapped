@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #
 # Creates a distributible tarball for Notion.
-NOTION_VERSION="3.10.0"
-NOTION_DMG="Notion-3.10.0-universal.dmg"
+NOTION_VERSION="3.11.1"
+NOTION_DMG="Notion-3.11.1-universal.dmg"
 BETTER_SQLITE3_VERSION="11.1.2"
-ELECTRON_ABI="121"
+ELECTRON_ABI="125"
 
 set -eo pipefail
 
